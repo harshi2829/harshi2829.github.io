@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harshini V — Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background-color: #0d0f1a;
+      color: #e8eaf6;
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 50px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: #9095b3;
+      font-size: 1rem;
+    }
+
+    .section-title {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #9095b3;
+      margin-bottom: 16px;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+
+    .project-card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .project-card p {
+      color: #c5c8e0;
+      margin-bottom: 16px;
+      font-size: 0.95rem;
+    }
+
+    .project-links a {
+      display: inline-block;
+      margin-right: 12px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .link-live {
+      background: #7c6af7;
+      color: #fff;
+    }
+
+    .link-code {
+      background: transparent;
+      color: #e8eaf6;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 24px;
+      margin-top: 16px;
+      font-size: 0.9rem;
+      color: #9095b3;
+    }
+
+    footer a {
+      color: #4cc9f0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Harshini V</h1>
+      <p>Java Full Stack Developer | MCA Fresher | Building and learning, one project at a time.</p>
+    </header>
+
+    <div class="section-title">Projects</div>
+
+    <div class="project-card">
+      <h2>JSON Formatter & Validator</h2>
+      <p>
+        A clean, free tool to validate, format, and minify JSON instantly in the browser.
+        Built with plain HTML, CSS, and JavaScript — no frameworks. I built this because
+        I regularly needed to check and format JSON responses while working on full-stack
+        projects, and wanted a fast, no-clutter tool for it.
+      </p>
+      <div class="project-links">
+        <a class="link-live" href="https://formatify-json.vercel.app" target="_blank">Live Demo</a>
+        <a class="link-code" href="https://github.com/harshi2829/Formatify-JSON" target="_blank">Source Code</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h2>StressSense AI — Multi-Model Stress Detection</h2>
+      <p>
+        A full-stack Deep  learning project that detects human stress levels from
+        physiological sensor data (EDA, heart rate, BVP, temperature). Implements and
+        compares three deep learning architectures — CNN-LSTM, BiLSTM, and an
+        Attention-based model — with REST APIs serving predictions to a frontend
+        dashboard.
+      </p>
+      <div class="project-links">
+        <a class="link-code" href="https://github.com/harshi2829/StressSense" target="_blank">Source Code</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h2>Social Media Web Application</h2>
+      <p>
+        A full-stack social media platform built with Spring Boot and Angular. Supports
+        user registration, login, profile management, and creating/viewing posts, with
+        protected routes and a RESTful backend.
+      </p>
+      <div class="project-links">
+        <a class="link-code" href="https://github.com/harshi2829/SocialMedia" target="_blank">Source Code</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>Contact: <a href="mailto:harshiniharshi2829@gmail.com">harshiniharshi2829@gmail.com</a></p>
+    </footer>
+
+  </div>
+</body>
+</html>
