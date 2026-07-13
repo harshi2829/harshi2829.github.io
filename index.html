@@ -95,6 +95,16 @@
       background: #6a58e5;
     }
 
+    .social-links a.resume-btn {
+      background: rgba(76,201,140,0.15);
+      border-color: #4cc98c;
+      color: #4cc98c;
+    }
+
+    .social-links a.resume-btn:hover {
+      background: rgba(76,201,140,0.25);
+    }
+
     /* STATS */
     .stats-grid {
       display: grid;
@@ -131,6 +141,38 @@
       color: #9095b3;
       margin-bottom: 16px;
       margin-top: 48px;
+    }
+
+    /* ABOUT ME */
+    .about-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-left: 3px solid #7c6af7;
+      border-radius: 12px;
+      padding: 22px 24px;
+      color: #c5c8e0;
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+
+    /* CURRENTLY LEARNING */
+    .learning-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .learning-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(76,201,140,0.08);
+      border: 1px solid rgba(76,201,140,0.2);
+      border-radius: 8px;
+      padding: 7px 14px;
+      font-size: 0.85rem;
+      color: #4cc98c;
+      font-weight: 500;
     }
 
     /* SKILLS */
@@ -317,7 +359,14 @@
 
     .project-card h2 {
       font-size: 1.15rem;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
+    }
+
+    .project-tagline {
+      color: #9095b3;
+      font-size: 0.88rem;
+      margin-bottom: 12px;
+      font-style: italic;
     }
 
     .tech-badges {
@@ -357,6 +406,16 @@
       color: #7c6af7;
       font-weight: 700;
       font-size: 0.85rem;
+    }
+
+    .project-note {
+      background: rgba(124,106,247,0.08);
+      border: 1px solid rgba(124,106,247,0.2);
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 0.82rem;
+      color: #9095b3;
+      margin-bottom: 14px;
     }
 
     .project-links {
@@ -475,31 +534,34 @@
     </div>
     <h1>Harshini V</h1>
     <p class="intro">
-      Java Full Stack Developer experienced in building and 
-      deploying web applications using Angular and Spring Boot. 
-      Built Aurevia — a live jewelry e-commerce platform with 
-      10+ REST APIs deployed on Vercel and Render. Completed 
-      Java Full Stack internship at Ethnotech Academic Solutions. 
-      Strong debugging experience — resolved critical CORS and 
-      Hibernate exceptions in production.
+      Java Full Stack Developer specializing in Spring Boot, 
+      Angular and REST APIs. Built and deployed Aurevia — 
+      a full-stack jewelry e-commerce platform with 10+ APIs 
+      and real-time features. Passionate about building 
+      scalable backend systems.
     </p>
 
     <div class="social-links">
-      <a class="primary" 
-         href="https://aurevia-frontend-silk.vercel.app" 
+      <a class="primary"
+         href="https://aurevia-frontend-silk.vercel.app"
          target="_blank">
         🚀 Live Project
       </a>
-      <a href="https://github.com/harshi2829" 
+      <a href="https://github.com/harshi2829"
          target="_blank">
         🐱 GitHub
       </a>
-      <a href="https://linkedin.com/in/harshini-v2829" 
+      <a href="https://linkedin.com/in/harshini-v2829"
          target="_blank">
         💼 LinkedIn
       </a>
       <a href="mailto:harshiniharshi2829@gmail.com">
         📧 Email
+      </a>
+      <a class="resume-btn"
+         href="https://drive.google.com/your-resume-link"
+         target="_blank">
+        📄 Resume
       </a>
     </div>
 
@@ -523,6 +585,28 @@
       </div>
     </div>
   </header>
+
+  <!-- ABOUT ME -->
+  <div class="section-title">About Me</div>
+  <div class="about-card">
+    I'm an MCA graduate from VTU Mysuru passionate about 
+    backend development and Java. I enjoy building REST APIs, 
+    solving real debugging challenges and deploying full-stack 
+    applications to production. I learn by understanding deeply 
+    rather than memorizing — I always want to know WHY something 
+    works, not just HOW. Currently expanding my skills in AWS 
+    and cloud technologies while actively looking for Java 
+    Full Stack Developer roles!
+  </div>
+
+  <!-- CURRENTLY LEARNING -->
+  <div class="section-title">Currently Learning</div>
+  <div class="learning-wrap">
+    <span class="learning-badge">☁️ AWS Cloud</span>
+    <span class="learning-badge">🔐 Spring Security</span>
+    <span class="learning-badge">🏗️ System Design</span>
+    <span class="learning-badge">📊 DSA Practice</span>
+  </div>
 
   <!-- SKILLS -->
   <div class="section-title">Tech Stack</div>
@@ -561,37 +645,36 @@
           and Social Media Platform — using Angular 17, 
           Spring Boot and MySQL</li>
       <li>Designed and tested 10+ RESTful API endpoints 
-          with consistent ApiResponse wrapper for 
-          structured responses — verified via Postman 
-          and Swagger UI</li>
-      <li>Resolved CORS configuration for cross-origin 
-          Angular-Spring Boot communication and Hibernate 
-          StaleObjectStateException caused by missing 
-          userId field in CartEntity</li>
+          with consistent ApiResponse wrapper — verified 
+          via Postman and Swagger UI</li>
+      <li>Resolved CORS configuration blocking Angular-Spring 
+          Boot communication and fixed Hibernate 
+          StaleObjectStateException by adding userId to 
+          CartEntity — enabling successful production deployment</li>
     </ul>
   </div>
 
   <!-- CERTIFICATIONS -->
   <div class="section-title">Certifications</div>
   <div class="cert-grid">
-    <a class="cert-card" 
-       href="https://www.hackerrank.com/certificates/da54f3401f8a" 
+    <a class="cert-card"
+       href="https://www.hackerrank.com/certificates/da54f3401f8a"
        target="_blank">
       <div class="cert-icon">🏆</div>
       <div class="cert-name">Java (Basic)</div>
       <div class="cert-issuer">HackerRank</div>
       <div class="cert-date">Jul 2026</div>
     </a>
-    <a class="cert-card" 
-       href="https://www.hackerrank.com/certificates/a61684574877" 
+    <a class="cert-card"
+       href="https://www.hackerrank.com/certificates/a61684574877"
        target="_blank">
       <div class="cert-icon">🏆</div>
       <div class="cert-name">Problem Solving (Basic)</div>
       <div class="cert-issuer">HackerRank</div>
       <div class="cert-date">Jul 2026</div>
     </a>
-    <a class="cert-card" 
-       href="https://www.hackerrank.com/certificates/013318130798" 
+    <a class="cert-card"
+       href="https://www.hackerrank.com/certificates/013318130798"
        target="_blank">
       <div class="cert-icon">🏆</div>
       <div class="cert-name">SQL (Basic)</div>
@@ -610,6 +693,10 @@
       <span class="badge badge-purple">Main Project</span>
     </div>
     <h2>Aurevia — Jewelry E-Commerce Platform</h2>
+    <p class="project-tagline">
+      Fixed a production bug where all users shared the same cart — 
+      solved by scoping cart data to each user via userId isolation!
+    </p>
     <div class="tech-badges">
       <span class="tech-badge">Angular 17</span>
       <span class="tech-badge">Spring Boot</span>
@@ -630,13 +717,13 @@
       <li>Fully Responsive Design</li>
     </ul>
     <div class="project-links">
-      <a class="link-live" 
-         href="https://aurevia-frontend-silk.vercel.app" 
+      <a class="link-live"
+         href="https://aurevia-frontend-silk.vercel.app"
          target="_blank">
         🚀 Live Demo
       </a>
-      <a class="link-code" 
-         href="https://github.com/harshi2829/Aurevia-Ecommerce-Platform" 
+      <a class="link-code"
+         href="https://github.com/harshi2829/Aurevia-Ecommerce-Platform"
          target="_blank">
         ⌥ Source Code
       </a>
@@ -647,9 +734,16 @@
   <div class="project-card">
     <div class="project-top">
       <span class="badge badge-purple">Spring Boot</span>
-      <span class="badge badge-blue">Tested</span>
+      <span class="badge badge-blue">Tested ✅</span>
     </div>
     <h2>Spring Boot Swagger REST API</h2>
+    <p class="project-tagline">
+      Production-ready REST API with full exception handling, 
+      Bean Validation and 6 passing JUnit unit tests using Mockito!
+    </p>
+    <div class="project-note">
+      📌 API-only project — tested via Swagger UI and Postman
+    </div>
     <div class="tech-badges">
       <span class="tech-badge">Spring Boot</span>
       <span class="tech-badge">MySQL</span>
@@ -669,8 +763,8 @@
       <li>Mockito Service Testing</li>
     </ul>
     <div class="project-links">
-      <a class="link-code" 
-         href="https://github.com/harshi2829/SpringBoot-Swagger-Demo" 
+      <a class="link-code"
+         href="https://github.com/harshi2829/SpringBoot-Swagger-Demo"
          target="_blank">
         ⌥ Source Code
       </a>
@@ -683,6 +777,13 @@
       <span class="badge badge-purple">Full Stack</span>
     </div>
     <h2>Social Media Web Application</h2>
+    <p class="project-tagline">
+      Instagram-inspired platform with post creation, 
+      like system and protected routes using Angular Auth Guards!
+    </p>
+    <div class="project-note">
+      📌 Backend API project — tested via Postman
+    </div>
     <div class="tech-badges">
       <span class="tech-badge">Angular</span>
       <span class="tech-badge">Spring Boot</span>
@@ -698,8 +799,8 @@
       <li>6+ REST APIs</li>
     </ul>
     <div class="project-links">
-      <a class="link-code" 
-         href="https://github.com/harshi2829/Social-Media-PlatForm" 
+      <a class="link-code"
+         href="https://github.com/harshi2829/Social-Media-PlatForm"
          target="_blank">
         ⌥ Source Code
       </a>
@@ -712,6 +813,10 @@
       <span class="badge badge-green">🟢 Live</span>
     </div>
     <h2>Formatify — JSON Formatter & Validator</h2>
+    <p class="project-tagline">
+      Built while working with Spring Boot REST APIs — 
+      needed a fast tool to validate JSON responses instantly!
+    </p>
     <div class="tech-badges">
       <span class="tech-badge">HTML</span>
       <span class="tech-badge">CSS</span>
@@ -727,13 +832,13 @@
       <li>Deployed on Vercel</li>
     </ul>
     <div class="project-links">
-      <a class="link-live" 
-         href="https://formatify-json.vercel.app" 
+      <a class="link-live"
+         href="https://formatify-json.vercel.app"
          target="_blank">
         🚀 Live Demo
       </a>
-      <a class="link-code" 
-         href="https://github.com/harshi2829/Formatify-JSON" 
+      <a class="link-code"
+         href="https://github.com/harshi2829/Formatify-JSON"
          target="_blank">
         ⌥ Source Code
       </a>
@@ -744,31 +849,35 @@
   <footer>
     <h2>Let's Build Something Together</h2>
     <p>
-      Open to Java Full Stack Developer roles — 
+      Open to Java Full Stack Developer roles —
       Bangalore / Mysuru / Remote
     </p>
 
     <div class="footer-links">
-      <a class="primary" 
+      <a class="primary"
          href="mailto:harshiniharshi2829@gmail.com">
         📧 Email Me
       </a>
-      <a href="https://linkedin.com/in/harshini-v2829" 
+      <a href="https://linkedin.com/in/harshini-v2829"
          target="_blank">
         💼 LinkedIn
       </a>
-      <a href="https://github.com/harshi2829" 
+      <a href="https://github.com/harshi2829"
          target="_blank">
         🐱 GitHub
       </a>
-      <a href="https://aurevia-frontend-silk.vercel.app" 
+      <a href="https://aurevia-frontend-silk.vercel.app"
          target="_blank">
         🚀 Live Project
+      </a>
+      <a href="https://drive.google.com/your-resume-link"
+         target="_blank">
+        📄 Resume
       </a>
     </div>
 
     <div class="copyright">
-      © 2026 Harshini V — Java Full Stack Developer | 
+      © 2026 Harshini V — Java Full Stack Developer |
       MCA Graduate, VTU Mysuru
     </div>
   </footer>
