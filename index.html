@@ -20,7 +20,7 @@
       padding: 40px 20px;
     }
 
-    /* ── HERO ── */
+    /* HERO */
     header {
       margin-bottom: 60px;
       padding-bottom: 40px;
@@ -123,7 +123,7 @@
       margin-top: 4px;
     }
 
-    /* ── SECTION ── */
+    /* SECTION */
     .section-title {
       font-size: 0.8rem;
       text-transform: uppercase;
@@ -133,7 +133,7 @@
       margin-top: 48px;
     }
 
-    /* ── SKILLS BADGES ── */
+    /* SKILLS */
     .badges-wrap {
       display: flex;
       flex-wrap: wrap;
@@ -160,7 +160,7 @@
       background: rgba(124,106,247,0.1);
     }
 
-    /* ── EXPERIENCE ── */
+    /* EXPERIENCE */
     .experience-card {
       background: rgba(255,255,255,0.04);
       border: 1px solid rgba(255,255,255,0.08);
@@ -219,7 +219,54 @@
       color: #7c6af7;
     }
 
-    /* ── PROJECT CARDS ── */
+    /* CERTIFICATIONS */
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .cert-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+
+    .cert-card:hover {
+      border-color: #7c6af7;
+      background: rgba(124,106,247,0.08);
+      transform: translateY(-2px);
+    }
+
+    .cert-icon {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    .cert-name {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #e8eaf6;
+      margin-bottom: 4px;
+    }
+
+    .cert-issuer {
+      font-size: 0.75rem;
+      color: #9095b3;
+      margin-bottom: 6px;
+    }
+
+    .cert-date {
+      font-size: 0.72rem;
+      color: #7c6af7;
+      font-weight: 600;
+    }
+
+    /* PROJECT CARDS */
     .project-card {
       background: rgba(255,255,255,0.04);
       border: 1px solid rgba(255,255,255,0.08);
@@ -348,7 +395,7 @@
       color: #7c6af7;
     }
 
-    /* ── FOOTER ── */
+    /* FOOTER */
     footer {
       margin-top: 60px;
       padding: 40px 0 20px;
@@ -409,33 +456,51 @@
       margin-top: 24px;
     }
 
-    /* ── RESPONSIVE ── */
+    /* RESPONSIVE */
     @media (max-width: 600px) {
       header h1 { font-size: 2rem; }
       .stats-grid { grid-template-columns: repeat(2, 1fr); }
       .project-features { grid-template-columns: 1fr; }
+      .cert-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 <div class="container">
 
-  <!-- ── HERO ── -->
+  <!-- HERO -->
   <header>
-    <div class="hero-tag">👩‍💻 Open to Work — Java Full Stack Developer</div>
+    <div class="hero-tag">
+      👩‍💻 Open to Work — Java Full Stack Developer
+    </div>
     <h1>Harshini V</h1>
     <p class="intro">
-      Java Full Stack Developer passionate about building scalable web
-      applications using Angular, Spring Boot and MySQL. Experienced in
-      developing 10+ REST APIs, solving real-world backend problems, and
-      deploying full-stack applications to production.
+      Java Full Stack Developer experienced in building and 
+      deploying web applications using Angular and Spring Boot. 
+      Built Aurevia — a live jewelry e-commerce platform with 
+      10+ REST APIs deployed on Vercel and Render. Completed 
+      Java Full Stack internship at Ethnotech Academic Solutions. 
+      Strong debugging experience — resolved critical CORS and 
+      Hibernate exceptions in production.
     </p>
 
     <div class="social-links">
-      <a class="primary" href="https://aurevia-frontend-silk.vercel.app" target="_blank">🚀 Live Project</a>
-      <a href="https://github.com/harshi2829" target="_blank">🐱 GitHub</a>
-      <a href="https://linkedin.com/in/harshini-v2829" target="_blank">💼 LinkedIn</a>
-      <a href="mailto:harshiniharshi2829@gmail.com">📧 Email</a>
+      <a class="primary" 
+         href="https://aurevia-frontend-silk.vercel.app" 
+         target="_blank">
+        🚀 Live Project
+      </a>
+      <a href="https://github.com/harshi2829" 
+         target="_blank">
+        🐱 GitHub
+      </a>
+      <a href="https://linkedin.com/in/harshini-v2829" 
+         target="_blank">
+        💼 LinkedIn
+      </a>
+      <a href="mailto:harshiniharshi2829@gmail.com">
+        📧 Email
+      </a>
     </div>
 
     <!-- STATS -->
@@ -445,8 +510,8 @@
         <div class="label">REST APIs Built</div>
       </div>
       <div class="stat-card">
-        <div class="number">5</div>
-        <div class="label">Full Stack Projects</div>
+        <div class="number">4</div>
+        <div class="label">Projects Built</div>
       </div>
       <div class="stat-card">
         <div class="number">2</div>
@@ -459,7 +524,7 @@
     </div>
   </header>
 
-  <!-- ── SKILLS ── -->
+  <!-- SKILLS -->
   <div class="section-title">Tech Stack</div>
   <div class="badges-wrap">
     <span class="badge-skill">☕ Java</span>
@@ -470,17 +535,17 @@
     <span class="badge-skill">🔗 REST APIs</span>
     <span class="badge-skill">📦 Spring Data JPA</span>
     <span class="badge-skill">🏗️ Hibernate</span>
-    <span class="badge-skill">📋 Maven</span>
-    <span class="badge-skill">📖 Swagger</span>
+    <span class="badge-skill">📖 Swagger/OpenAPI</span>
+    <span class="badge-skill">🧪 JUnit & Mockito</span>
+    <span class="badge-skill">🐳 Docker</span>
     <span class="badge-skill">🐱 Git & GitHub</span>
     <span class="badge-skill">🎨 Tailwind CSS</span>
-    <span class="badge-skill">🐍 Python</span>
-    <span class="badge-skill">🧪 Postman</span>
+    <span class="badge-skill">🧰 Postman</span>
     <span class="badge-skill">▲ Vercel</span>
     <span class="badge-skill">🚀 Render</span>
   </div>
 
-  <!-- ── EXPERIENCE ── -->
+  <!-- EXPERIENCE -->
   <div class="section-title">Experience</div>
   <div class="experience-card">
     <div class="exp-header">
@@ -491,14 +556,51 @@
       Ethnotech Academic Solutions Pvt. Ltd. • Mysuru, Karnataka
     </div>
     <ul class="exp-bullets">
-      <li>Built 2 production-ready full-stack applications — a Social Media Platform and Aurevia Jewelry E-Commerce — using Angular, Spring Boot and MySQL</li>
-      <li>Designed and implemented 10+ RESTful API endpoints with consistent ApiResponse&lt;T&gt; wrapper pattern for structured responses</li>
-      <li>Managed database operations using Spring Data JPA and Hibernate with custom queries like findByUserId()</li>
-      <li>Fixed 3 critical bugs including CORS configuration error and Hibernate StaleObjectStateException, enabling successful deployment</li>
+      <li>Delivered 2 full-stack applications from scratch 
+          to deployment — Aurevia (live on Vercel + Render) 
+          and Social Media Platform — using Angular 17, 
+          Spring Boot and MySQL</li>
+      <li>Designed and tested 10+ RESTful API endpoints 
+          with consistent ApiResponse wrapper for 
+          structured responses — verified via Postman 
+          and Swagger UI</li>
+      <li>Resolved CORS configuration for cross-origin 
+          Angular-Spring Boot communication and Hibernate 
+          StaleObjectStateException caused by missing 
+          userId field in CartEntity</li>
     </ul>
   </div>
 
-  <!-- ── PROJECTS ── -->
+  <!-- CERTIFICATIONS -->
+  <div class="section-title">Certifications</div>
+  <div class="cert-grid">
+    <a class="cert-card" 
+       href="https://www.hackerrank.com/certificates/da54f3401f8a" 
+       target="_blank">
+      <div class="cert-icon">🏆</div>
+      <div class="cert-name">Java (Basic)</div>
+      <div class="cert-issuer">HackerRank</div>
+      <div class="cert-date">Jul 2026</div>
+    </a>
+    <a class="cert-card" 
+       href="https://www.hackerrank.com/certificates/a61684574877" 
+       target="_blank">
+      <div class="cert-icon">🏆</div>
+      <div class="cert-name">Problem Solving (Basic)</div>
+      <div class="cert-issuer">HackerRank</div>
+      <div class="cert-date">Jul 2026</div>
+    </a>
+    <a class="cert-card" 
+       href="https://www.hackerrank.com/certificates/013318130798" 
+       target="_blank">
+      <div class="cert-icon">🏆</div>
+      <div class="cert-name">SQL (Basic)</div>
+      <div class="cert-issuer">HackerRank</div>
+      <div class="cert-date">Jul 2026</div>
+    </a>
+  </div>
+
+  <!-- PROJECTS -->
   <div class="section-title">Projects</div>
 
   <!-- AUREVIA -->
@@ -509,10 +611,11 @@
     </div>
     <h2>Aurevia — Jewelry E-Commerce Platform</h2>
     <div class="tech-badges">
-      <span class="tech-badge">Angular</span>
+      <span class="tech-badge">Angular 17</span>
       <span class="tech-badge">Spring Boot</span>
       <span class="tech-badge">MySQL</span>
       <span class="tech-badge">Tailwind CSS</span>
+      <span class="tech-badge">Docker</span>
       <span class="tech-badge">Vercel</span>
       <span class="tech-badge">Render</span>
     </div>
@@ -522,13 +625,21 @@
       <li>User-specific Wishlist</li>
       <li>10+ REST APIs</li>
       <li>BehaviorSubject Live Updates</li>
-      <li>Quantity Stepper</li>
-      <li>Cloud Deployment</li>
-      <li>Auth Guards</li>
+      <li>userId Cart Isolation</li>
+      <li>Docker Containerization</li>
+      <li>Fully Responsive Design</li>
     </ul>
     <div class="project-links">
-      <a class="link-live" href="https://aurevia-frontend-silk.vercel.app" target="_blank">🚀 Live Demo</a>
-      <a class="link-code" href="https://github.com/harshi2829/Aurevia-Ecommerce-Platform" target="_blank">⌥ Source Code</a>
+      <a class="link-live" 
+         href="https://aurevia-frontend-silk.vercel.app" 
+         target="_blank">
+        🚀 Live Demo
+      </a>
+      <a class="link-code" 
+         href="https://github.com/harshi2829/Aurevia-Ecommerce-Platform" 
+         target="_blank">
+        ⌥ Source Code
+      </a>
     </div>
   </div>
 
@@ -536,12 +647,15 @@
   <div class="project-card">
     <div class="project-top">
       <span class="badge badge-purple">Spring Boot</span>
+      <span class="badge badge-blue">Tested</span>
     </div>
-    <h2>SpringBoot Swagger REST API</h2>
+    <h2>Spring Boot Swagger REST API</h2>
     <div class="tech-badges">
       <span class="tech-badge">Spring Boot</span>
       <span class="tech-badge">MySQL</span>
       <span class="tech-badge">Swagger/OpenAPI</span>
+      <span class="tech-badge">JUnit 5</span>
+      <span class="tech-badge">Mockito</span>
       <span class="tech-badge">Maven</span>
     </div>
     <ul class="project-features">
@@ -551,9 +665,15 @@
       <li>@RestControllerAdvice</li>
       <li>ResponseEntity + HttpStatus</li>
       <li>Swagger UI Documentation</li>
+      <li>6 JUnit Unit Tests</li>
+      <li>Mockito Service Testing</li>
     </ul>
     <div class="project-links">
-      <a class="link-code" href="https://github.com/harshi2829/SpringBoot-Swagger-Demo" target="_blank">⌥ Source Code</a>
+      <a class="link-code" 
+         href="https://github.com/harshi2829/SpringBoot-Swagger-Demo" 
+         target="_blank">
+        ⌥ Source Code
+      </a>
     </div>
   </div>
 
@@ -567,45 +687,22 @@
       <span class="tech-badge">Angular</span>
       <span class="tech-badge">Spring Boot</span>
       <span class="tech-badge">MySQL</span>
-      <span class="tech-badge">Tailwind CSS</span>
+      <span class="tech-badge">SCSS</span>
     </div>
     <ul class="project-features">
       <li>User Registration & Login</li>
       <li>Profile Management</li>
       <li>Create & View Posts</li>
-      <li>Protected Routes</li>
+      <li>Like System</li>
       <li>Angular Auth Guards</li>
       <li>6+ REST APIs</li>
     </ul>
     <div class="project-links">
-      <a class="link-code" href="https://github.com/harshi2829/Social-Media-PlatForm" target="_blank">⌥ Source Code</a>
-    </div>
-  </div>
-
-  <!-- STRESSSENSE -->
-  <div class="project-card">
-    <div class="project-top">
-      <span class="badge badge-blue">Deep Learning</span>
-    </div>
-    <h2>StressSense AI — Stress Detection Platform</h2>
-    <div class="tech-badges">
-      <span class="tech-badge">Python</span>
-      <span class="tech-badge">Flask</span>
-      <span class="tech-badge">PyTorch</span>
-      <span class="tech-badge">CNN-LSTM</span>
-      <span class="tech-badge">BiLSTM</span>
-      <span class="tech-badge">WESAD Dataset</span>
-    </div>
-    <ul class="project-features">
-      <li>3 Deep Learning Models</li>
-      <li>80% Confidence (High Stress)</li>
-      <li>ECG, EMG, Respiration Data</li>
-      <li>7,000 Rows Processing</li>
-      <li>Flask REST API</li>
-      <li>Interactive Dashboard</li>
-    </ul>
-    <div class="project-links">
-      <a class="link-code" href="https://github.com/harshi2829/StressSense" target="_blank">⌥ Source Code</a>
+      <a class="link-code" 
+         href="https://github.com/harshi2829/Social-Media-PlatForm" 
+         target="_blank">
+        ⌥ Source Code
+      </a>
     </div>
   </div>
 
@@ -626,29 +723,53 @@
       <li>Exact Error Position Detection</li>
       <li>Format & Minify</li>
       <li>Copy Output</li>
-      <li>No Frameworks</li>
+      <li>No Frameworks Used</li>
       <li>Deployed on Vercel</li>
     </ul>
     <div class="project-links">
-      <a class="link-live" href="https://formatify-json.vercel.app" target="_blank">🚀 Live Demo</a>
-      <a class="link-code" href="https://github.com/harshi2829/Formatify-JSON" target="_blank">⌥ Source Code</a>
+      <a class="link-live" 
+         href="https://formatify-json.vercel.app" 
+         target="_blank">
+        🚀 Live Demo
+      </a>
+      <a class="link-code" 
+         href="https://github.com/harshi2829/Formatify-JSON" 
+         target="_blank">
+        ⌥ Source Code
+      </a>
     </div>
   </div>
 
-  <!-- ── FOOTER ── -->
+  <!-- FOOTER -->
   <footer>
     <h2>Let's Build Something Together</h2>
-    <p>Open to Java Full Stack Developer roles — Bangalore / Mysuru / Remote</p>
+    <p>
+      Open to Java Full Stack Developer roles — 
+      Bangalore / Mysuru / Remote
+    </p>
 
     <div class="footer-links">
-      <a class="primary" href="mailto:harshiniharshi2829@gmail.com">📧 Email Me</a>
-      <a href="https://linkedin.com/in/harshini-v2829" target="_blank">💼 LinkedIn</a>
-      <a href="https://github.com/harshi2829" target="_blank">🐱 GitHub</a>
-      <a href="https://aurevia-frontend-silk.vercel.app" target="_blank">🚀 Live Project</a>
+      <a class="primary" 
+         href="mailto:harshiniharshi2829@gmail.com">
+        📧 Email Me
+      </a>
+      <a href="https://linkedin.com/in/harshini-v2829" 
+         target="_blank">
+        💼 LinkedIn
+      </a>
+      <a href="https://github.com/harshi2829" 
+         target="_blank">
+        🐱 GitHub
+      </a>
+      <a href="https://aurevia-frontend-silk.vercel.app" 
+         target="_blank">
+        🚀 Live Project
+      </a>
     </div>
 
     <div class="copyright">
-      © 2026 Harshini V — Java Full Stack Developer | MCA Graduate, VTU Mysuru
+      © 2026 Harshini V — Java Full Stack Developer | 
+      MCA Graduate, VTU Mysuru
     </div>
   </footer>
 
