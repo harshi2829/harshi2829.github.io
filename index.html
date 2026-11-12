@@ -595,9 +595,9 @@
     <h1>Harshini V</h1>
     <p class="intro">
       Java Full Stack Developer specializing in Spring Boot,
-      Angular and REST APIs. Built production-ready applications
-      with 10+ REST APIs, authentication, Docker and
-      cloud deployment.
+      Angular, REST APIs and microservices. Built production-ready
+      applications with 10+ REST APIs, JWT authentication, Docker
+      and cloud deployment.
     </p>
 
     <div class="social-links">
@@ -611,7 +611,7 @@
       <a href="mailto:harshiniharshi2829@gmail.com">
         📧 Email</a>
       <a class="resume-btn"
-         href="https://drive.google.com/file/d/1o70HbZtXNoQXxcc_zKPfG5YIDUlCHEj8/view?usp=drive_link"
+         href="resume.pdf"
          target="_blank">📄 Resume</a>
     </div>
 
@@ -622,7 +622,7 @@
         <div class="label">REST APIs Built</div>
       </div>
       <div class="stat-card">
-        <div class="number">4</div>
+        <div class="number">5</div>
         <div class="label">Projects Built</div>
       </div>
       <div class="stat-card">
@@ -673,6 +673,11 @@
         <span class="skill-tag">Maven</span>
         <span class="skill-tag">JUnit</span>
         <span class="skill-tag">Mockito</span>
+        <span class="skill-tag">Spring Cloud</span>
+        <span class="skill-tag">Spring Security</span>
+        <span class="skill-tag">JWT</span>
+        <span class="skill-tag">OpenFeign</span>
+        <span class="skill-tag">Eureka</span>
       </div>
     </div>
     <div class="skill-category">
@@ -690,6 +695,7 @@
       <h3>Database</h3>
       <div class="skill-tags">
         <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">TiDB Cloud</span>
         <span class="skill-tag">Spring Data JPA</span>
         <span class="skill-tag">Hibernate ORM</span>
       </div>
@@ -698,6 +704,7 @@
       <h3>Tools & DevOps</h3>
       <div class="skill-tags">
         <span class="skill-tag">Docker</span>
+        <span class="skill-tag">GitHub Actions</span>
         <span class="skill-tag">Git & GitHub</span>
         <span class="skill-tag">Swagger/OpenAPI</span>
         <span class="skill-tag">Postman</span>
@@ -805,6 +812,56 @@
          target="_blank">🚀 Live Demo</a>
       <a class="link-code"
          href="https://github.com/harshi2829/Aurevia-Ecommerce-Platform"
+         target="_blank">⭐ Source Code</a>
+    </div>
+  </div>
+
+  <!-- BANKING SYSTEM -->
+  <div class="project-card">
+    <div class="project-top">
+      <span class="badge badge-purple">Microservices</span>
+      <span class="badge badge-blue">CI with GitHub Actions ✅</span>
+    </div>
+    <h2>Banking System — Microservices Architecture</h2>
+    <p class="project-tech-line">
+      Spring Boot · Spring Cloud · JWT · Eureka · OpenFeign · TiDB Cloud
+    </p>
+    <p class="project-tagline">
+      Four services with JWT security and service discovery. When CI
+      failed because the default Spring Boot test tried to reach a
+      real database, I replaced it with Mockito-mocked tests!
+    </p>
+    <div class="project-note">
+      📌 API-only project — documented with Swagger UI. Auth, Account
+      and Transaction services run on Render; API Gateway runs locally.
+    </div>
+    <div class="tech-badges">
+      <span class="tech-badge">Spring Boot</span>
+      <span class="tech-badge">Spring Cloud</span>
+      <span class="tech-badge">Spring Security</span>
+      <span class="tech-badge">JWT</span>
+      <span class="tech-badge">Eureka</span>
+      <span class="tech-badge">OpenFeign</span>
+      <span class="tech-badge">JUnit 5</span>
+      <span class="tech-badge">Mockito</span>
+      <span class="tech-badge">GitHub Actions</span>
+      <span class="tech-badge">Render</span>
+      <span class="tech-badge">TiDB Cloud</span>
+    </div>
+    <ul class="project-features">
+      <li>JWT Login & Registration (BCrypt)</li>
+      <li>Custom JWT Filter (OncePerRequestFilter)</li>
+      <li>Eureka Service Discovery</li>
+      <li>Feign Calls: Transaction → Account</li>
+      <li>API Gateway with JWT Validation</li>
+      <li>Swagger/OpenAPI on Every Service</li>
+      <li>JUnit 5 + Mockito Tests</li>
+      <li>GitHub Actions CI</li>
+    </ul>
+    <div class="project-links">
+      <!-- TODO: replace YOUR-BANKING-REPO-NAME with your real repo name -->
+      <a class="link-code"
+         href="https://github.com/harshi2829/YOUR-BANKING-REPO-NAME"
          target="_blank">⭐ Source Code</a>
     </div>
   </div>
@@ -928,7 +985,7 @@
     </div>
   </div>
 
-  <!-- ARCHITECTURE -->
+  <!-- ARCHITECTURE: AUREVIA -->
   <div class="section-title">Aurevia — System Architecture</div>
   <div class="arch-card">
     <div class="arch-flow">
@@ -972,6 +1029,45 @@
     </div>
   </div>
 
+  <!-- ARCHITECTURE: BANKING SYSTEM -->
+  <div class="section-title">Banking System — Architecture</div>
+  <div class="arch-card">
+    <div class="arch-flow">
+      <div class="arch-box">
+        <div class="arch-title">Client</div>
+        <div class="arch-sub">Bearer Token</div>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-box">
+        <div class="arch-title">API Gateway</div>
+        <div class="arch-sub">JWT Validation</div>
+        <div class="arch-sub">(runs locally)</div>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-box">
+        <div class="arch-title">Auth · Account · Transaction</div>
+        <div class="arch-sub">Spring Boot Services</div>
+        <div class="arch-sub">Transaction → Account via Feign</div>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-box">
+        <div class="arch-title">TiDB Cloud</div>
+        <div class="arch-sub">Database</div>
+      </div>
+    </div>
+    <div class="arch-deploy">
+      <div class="arch-deploy-item">
+        🧭 Discovery with <span>Eureka</span>
+      </div>
+      <div class="arch-deploy-item">
+        🚀 Services on <span>Render</span>
+      </div>
+      <div class="arch-deploy-item">
+        ⚙️ CI with <span>GitHub Actions</span>
+      </div>
+    </div>
+  </div>
+
   <!-- FOOTER -->
   <footer>
     <h2>Available for Java Full Stack Developer Opportunities</h2>
@@ -988,8 +1084,6 @@
          target="_blank">🐱 GitHub</a>
       <a href="https://aurevia-frontend-silk.vercel.app"
          target="_blank">🚀 Live Project</a>
-      <a href="https://drive.google.com/file/d/1o70HbZtXNoQXxcc_zKPfG5YIDUlCHEj8/view?usp=drive_link"
-         target="_blank">📄 Resume</a>
     </div>
 
     <div class="copyright">
